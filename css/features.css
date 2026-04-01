@@ -1,0 +1,79 @@
+/* ============================================================
+   features.css — Features Section Styles
+   Sephon 32 Landing Page
+   ============================================================ */
+
+/* ---- Section Layout ---- */
+.features {
+  padding: 80px 0 100px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+/* ---- 3-Column Grid ---- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* ---- Feature Card ---- */
+.feature-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: var(--transition);
+}
+
+.feature-item:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  background: var(--bg-card-hover);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ---- Feature Icon ---- */
+.feature-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-glow-sm);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--accent);
+  margin-bottom: 18px;
+  transition: var(--transition);
+}
+
+.feature-item:hover .feature-icon {
+  background: rgba(0, 207, 255, 0.2);
+  border-color: var(--accent);
+  box-shadow: 0 0 18px var(--accent-glow-sm);
+}
+
+/* ---- Feature Text ---- */
+.feature-item h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .features-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .features-grid { grid-template-columns: minmax(0, 1fr); }
+}

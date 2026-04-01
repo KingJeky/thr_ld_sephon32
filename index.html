@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sephon 32 — Home | Educational Kit Drone Semi-Underwater</title>
+  <meta name="description" content="Sephon 32 adalah Educational Kit Drone Semi-Underwater berbasis ESP32 untuk monitoring pH, Kekeruhan, dan Suhu air secara real-time. Cocok untuk mahasiswa, pelajar SMK, dan hobbyist IoT." />
+  <meta name="keywords" content="Sephon 32, drone underwater, ESP32, IoT, sensor pH, turbidity sensor, monitoring air, educational kit" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Sephon<span class="logo-accent">32</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="sensors.html" class="nav-link">Sensors</a></li>
+        <li><a href="fitur.html" class="nav-link">Fitur</a></li>
+        <li><a href="edukasi.html" class="nav-link">Edukasi</a></li>
+        <li><a href="pesan.html" class="nav-link">Pesan</a></li>
+      </ul>
+      <a href="https://sephon-official.myscalev.com/p/sephon-32" target="_blank" class="btn-nav" id="navOrderBtn">Pesan Sekarang</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="hero-container">
+        <!-- Content Column -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            ESP32 · IoT · Underwater Drone Kit
+          </div>
+
+          <h1 class="hero-title">
+            Kuasai IoT dengan<br />
+            <span class="gradient-text">Drone Semi-Underwater</span><br />
+            Sephon 32
+          </h1>
+
+          <p class="hero-subtitle">
+            Kit edukasi lengkap berbasis ESP32 untuk monitoring
+            <strong>pH</strong>, <strong>Kekeruhan</strong>, dan <strong>Suhu</strong>
+            air secara real-time. Dirancang untuk generasi engineer masa depan.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://sephon-official.myscalev.com/p/sephon-32" target="_blank" class="btn-primary" id="heroCTA">
+              <span>PESAN KIT SEPHON 32 SEKARANG</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="sensors.html" class="btn-outline" id="heroExplore">Lihat Fitur</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Sensor Presisi</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">ESP32</span>
+              <span class="stat-label">Chipset</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">Real-Time</span>
+              <span class="stat-label">Monitoring</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Column -->
+        <div class="hero-visual">
+          <div class="hero-img-frame">
+            <div class="frame-glow"></div>
+            <img src="assets/images/dr1.jpeg" alt="Sephon 32 Drone Semi-Underwater ESP32" class="hero-img" loading="eager" />
+            <div class="img-overlay-badge top-right">
+              <span class="pulse-dot"></span> Live Monitoring
+            </div>
+            <div class="img-overlay-badge bottom-left">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+              </svg>
+              ESP32 Ready
+            </div>
+          </div>
+          <!-- Floating Sensor Cards -->
+          <div class="floating-card card-ph">
+            <div class="fc-icon">⚗️</div>
+            <div class="fc-info">
+              <span class="fc-label">pH Level</span>
+              <span class="fc-value">7.42</span>
+            </div>
+          </div>
+          <div class="floating-card card-turb">
+            <div class="fc-icon">💧</div>
+            <div class="fc-info">
+              <span class="fc-label">Turbidity</span>
+              <span class="fc-value">12 NTU</span>
+            </div>
+          </div>
+          <div class="floating-card card-temp">
+            <div class="fc-icon">🌡️</div>
+            <div class="fc-info">
+              <span class="fc-label">Suhu Air</span>
+              <span class="fc-value">28.5°C</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">Sephon<span class="logo-accent">32</span></span>
+          </a>
+          <p class="footer-tagline">Educational Kit Drone Semi-Underwater berbasis ESP32. Membangun generasi engineer IoT masa depan.</p>
+          <div class="footer-socials">
+            <a href="https://sephon-official.myscalev.com/p/sephon-32" target="_blank" class="social-link" aria-label="Website Sephon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Produk</h5>
+          <ul>
+            <li><a href="sensors.html">Sensor pH</a></li>
+            <li><a href="sensors.html">Sensor Turbidity</a></li>
+            <li><a href="sensors.html">Sensor Suhu</a></li>
+            <li><a href="fitur.html">Semua Fitur</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Edukasi</h5>
+          <ul>
+            <li><a href="edukasi.html">Untuk Mahasiswa</a></li>
+            <li><a href="edukasi.html">Untuk SMK</a></li>
+            <li><a href="edukasi.html">Untuk Hobbyist</a></li>
+            <li><a href="edukasi.html">Dokumentasi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Pemesanan</h5>
+          <ul>
+            <li><a href="https://sephon-official.myscalev.com/p/sephon-32" target="_blank">Pesan Sekarang</a></li>
+            <li><a href="https://sephon-official.myscalev.com/p/sephon-32" target="_blank">Toko Resmi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sephon 32. All rights reserved. Educational IoT Kit.</p>
+        <p class="footer-made">Powered by <span class="gradient-text">ESP32 Technology</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+</body>
+</html>

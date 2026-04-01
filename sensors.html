@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sephon 32 — Sensors | Educational Kit Drone Semi-Underwater</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/sensors.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Sephon<span class="logo-accent">32</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="sensors.html" class="nav-link active">Sensors</a></li>
+        <li><a href="fitur.html" class="nav-link">Fitur</a></li>
+        <li><a href="edukasi.html" class="nav-link">Edukasi</a></li>
+        <li><a href="pesan.html" class="nav-link">Pesan</a></li>
+      </ul>
+      <a href="https://sephon-official.myscalev.com/p/sephon-32" target="_blank" class="btn-nav" id="navOrderBtn">Pesan Sekarang</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== SENSORS ===================== -->
+  <main style="padding-top: calc(var(--nav-height) + 40px); min-height: 70vh;">
+    <section class="sensors" id="sensors">
+      <div class="sensors-bg-glow"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">3 Sensor Presisi Terintegrasi</span>
+          <h2 class="section-title">
+            Sensor Canggih untuk <span class="gradient-text">Monitoring Air</span>
+          </h2>
+          <p class="section-desc">
+            Sephon 32 hadir dengan tiga sensor berkualitas tinggi yang bekerja secara simultan
+            untuk menghasilkan data kualitas air yang akurat dan real-time.
+          </p>
+        </div>
+
+        <div class="sensors-grid">
+          <!-- Sensor pH -->
+          <div class="sensor-card" id="sensorPH">
+            <div class="sensor-card-glow"></div>
+            <div class="sensor-number">01</div>
+            <div class="sensor-icon-wrap">
+              <div class="sensor-icon">
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="32" cy="32" r="28" stroke="var(--accent)" stroke-width="2" opacity="0.3"/>
+                  <path d="M20 44 L20 20 L28 20 Q36 20 36 28 Q36 36 28 36 L20 36" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M40 36 L44 28 L48 36" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M41 33 L47 33" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="sensor-name">Sensor pH</h3>
+            <p class="sensor-tagline">Akurasi Tinggi · Keasaman Air</p>
+            <p class="sensor-desc">
+              Mengukur tingkat keasaman (pH) air secara presisi. Penting untuk memastikan kualitas
+              air layak bagi ekosistem akuatik dan kebutuhan industri.
+            </p>
+            <div class="sensor-specs">
+              <div class="spec-chip">Range: pH 0–14</div>
+              <div class="spec-chip">Akurasi ±0.1</div>
+              <div class="spec-chip">Real-time</div>
+            </div>
+            <div class="sensor-img-wrap">
+              <img src="assets/images/dr2.jpeg" alt="Sensor pH Sephon 32" class="sensor-img" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Sensor Turbidity -->
+          <div class="sensor-card sensor-card-featured" id="sensorTurbidity">
+            <div class="sensor-card-glow glow-featured"></div>
+            <div class="sensor-number">02</div>
+            <div class="featured-badge">Unggulan</div>
+            <div class="sensor-icon-wrap">
+              <div class="sensor-icon">
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="32" cy="32" r="28" stroke="var(--accent)" stroke-width="2" opacity="0.3"/>
+                  <path d="M18 26 Q26 18 32 26 Q38 34 46 26" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M18 34 Q26 26 32 34 Q38 42 46 34" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="32" cy="32" r="4" fill="var(--accent)" opacity="0.6"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="sensor-name">Sensor Turbidity</h3>
+            <p class="sensor-tagline">Optik Presisi · Kekeruhan Air</p>
+            <p class="sensor-desc">
+              Menggunakan teknologi optik canggih untuk mendeteksi partikel tersuspensi dalam air.
+              Sensor kekeruhan ini memberikan pembacaan NTU yang akurat untuk menilai kejernihan air.
+            </p>
+            <div class="sensor-specs">
+              <div class="spec-chip">Satuan: NTU</div>
+              <div class="spec-chip">Optik IR</div>
+              <div class="spec-chip">±5% Akurasi</div>
+            </div>
+            <div class="sensor-img-wrap">
+              <img src="assets/images/dr3.jpeg" alt="Sensor Turbidity Sephon 32" class="sensor-img" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Sensor Suhu -->
+          <div class="sensor-card" id="sensorTemp">
+            <div class="sensor-card-glow"></div>
+            <div class="sensor-number">03</div>
+            <div class="sensor-icon-wrap">
+              <div class="sensor-icon">
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="32" cy="32" r="28" stroke="var(--accent)" stroke-width="2" opacity="0.3"/>
+                  <rect x="28" y="16" width="8" height="24" rx="4" stroke="var(--accent)" stroke-width="2.5"/>
+                  <circle cx="32" cy="44" r="6" stroke="var(--accent)" stroke-width="2.5"/>
+                  <line x1="36" y1="24" x2="40" y2="24" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="36" y1="30" x2="42" y2="30" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="36" y1="36" x2="40" y2="36" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="sensor-name">Sensor Suhu</h3>
+            <p class="sensor-tagline">Presisi Tinggi · Fluktuasi Termal</p>
+            <p class="sensor-desc">
+              Memonitor perubahan suhu air secara kontinu. Fluktuasi suhu yang krusial bagi
+              kehidupan akuatik dapat terdeteksi dengan resolusi 0.1°C untuk analisis data yang mendalam.
+            </p>
+            <div class="sensor-specs">
+              <div class="spec-chip">Range: -10–85°C</div>
+              <div class="spec-chip">±0.1°C</div>
+              <div class="spec-chip">DS18B20</div>
+            </div>
+            <div class="sensor-img-wrap sensor-img-placeholder">
+              <div class="placeholder-visual">
+                <span class="placeholder-icon">🌡️</span>
+                <span>Thermal Sensor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">Sephon<span class="logo-accent">32</span></span>
+          </a>
+          <p class="footer-tagline">Educational Kit Drone Semi-Underwater berbasis ESP32. Membangun generasi engineer IoT masa depan.</p>
+          <div class="footer-socials">
+            <a href="https://sephon-official.myscalev.com/p/sephon-32" target="_blank" class="social-link" aria-label="Website Sephon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Produk</h5>
+          <ul>
+            <li><a href="sensors.html">Sensor pH</a></li>
+            <li><a href="sensors.html">Sensor Turbidity</a></li>
+            <li><a href="sensors.html">Sensor Suhu</a></li>
+            <li><a href="fitur.html">Semua Fitur</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Edukasi</h5>
+          <ul>
+            <li><a href="edukasi.html">Untuk Mahasiswa</a></li>
+            <li><a href="edukasi.html">Untuk SMK</a></li>
+            <li><a href="edukasi.html">Untuk Hobbyist</a></li>
+            <li><a href="edukasi.html">Dokumentasi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Pemesanan</h5>
+          <ul>
+            <li><a href="https://sephon-official.myscalev.com/p/sephon-32" target="_blank">Pesan Sekarang</a></li>
+            <li><a href="https://sephon-official.myscalev.com/p/sephon-32" target="_blank">Toko Resmi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sephon 32. All rights reserved. Educational IoT Kit.</p>
+        <p class="footer-made">Powered by <span class="gradient-text">ESP32 Technology</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+</body>
+</html>

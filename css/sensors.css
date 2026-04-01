@@ -1,0 +1,203 @@
+/* ============================================================
+   sensors.css — Sensors Section Styles
+   Sephon 32 Landing Page
+   ============================================================ */
+
+/* ---- Section Layout ---- */
+.sensors {
+  padding: 80px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---- Ambient Glow ---- */
+.sensors-bg-glow {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0, 207, 255, 0.05) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* ---- 3-Column Grid ---- */
+.sensors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* ---- Card Base ---- */
+.sensor-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  transition: var(--transition);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sensor-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-6px);
+  background: var(--bg-card-hover);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px var(--accent-glow-sm);
+}
+
+/* ---- Card Glow Overlay ---- */
+.sensor-card-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(0, 207, 255, 0.07), transparent);
+  pointer-events: none;
+}
+
+/* ---- Featured Variant ---- */
+.sensor-card-featured {
+  border-color: rgba(0, 207, 255, 0.3);
+  background: linear-gradient(160deg, #111a2c 0%, var(--bg-card) 100%);
+}
+
+.sensor-card-featured:hover {
+  border-color: var(--accent);
+}
+
+.glow-featured {
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0, 207, 255, 0.14), transparent);
+}
+
+/* ---- Card Header ---- */
+.sensor-number {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #060a10;
+  background: var(--accent);
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+/* ---- Sensor Icon ---- */
+.sensor-icon-wrap {
+  margin-bottom: 20px;
+}
+
+.sensor-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-glow-sm);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: var(--transition);
+}
+
+.sensor-card:hover .sensor-icon {
+  background: rgba(0, 207, 255, 0.2);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow-sm);
+}
+
+/* ---- Sensor Info ---- */
+.sensor-name {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.sensor-tagline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.sensor-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+/* ---- Spec Chips ---- */
+.sensor-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.spec-chip {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-glow-sm);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-family: var(--font-mono);
+}
+
+/* ---- Sensor Image ---- */
+.sensor-img-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  height: 160px;
+}
+
+.sensor-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.sensor-card:hover .sensor-img { transform: scale(1.05); }
+
+/* ---- Placeholder (Suhu card) ---- */
+.sensor-img-placeholder {
+  background: var(--bg-secondary);
+}
+
+.placeholder-visual {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+.placeholder-icon { font-size: 2rem; }
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .sensors-grid { grid-template-columns: minmax(0, 1fr); }
+}

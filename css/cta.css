@@ -1,0 +1,177 @@
+/* ============================================================
+   cta.css — Call to Action Section Styles
+   Sephon 32 Landing Page
+   ============================================================ */
+
+/* ---- Section Layout ---- */
+.cta-section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ---- Backgrounds & Glows ---- */
+.cta-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(0, 150, 255, 0.09) 0%, transparent 70%),
+    linear-gradient(180deg, var(--bg-primary) 0%, #080c14 100%);
+}
+
+.cta-glow-1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 207, 255, 0.15) 0%, transparent 65%);
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(60px);
+}
+
+.cta-glow-2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 80, 255, 0.1) 0%, transparent 65%);
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(60px);
+}
+
+/* ---- Content Wrapper ---- */
+.cta-content { position: relative; z-index: 1; }
+
+/* ---- Urgency Badge ---- */
+.cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #00ff88;
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  background: rgba(0, 255, 136, 0.06);
+  padding: 8px 20px;
+  border-radius: 100px;
+  margin-bottom: 32px;
+}
+
+.badge-dot.animate {
+  background: #00ff88;
+  animation: pulse 1s infinite;
+}
+
+/* ---- Headline ---- */
+.cta-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.cta-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+/* ---- Perks Row ---- */
+.cta-perks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.perk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 8px 18px;
+  border-radius: 100px;
+}
+
+.perk span { font-size: 1rem; }
+
+/* ---- Mega CTA Button ---- */
+.btn-cta-mega {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #00cfff 0%, #0066ff 50%, #00cfff 100%);
+  background-size: 200% auto;
+  animation: gradientShift 3s ease infinite;
+  box-shadow:
+    0 0 0 1px rgba(0, 207, 255, 0.4),
+    0 8px 40px rgba(0, 207, 255, 0.45),
+    0 20px 80px rgba(0, 100, 255, 0.2);
+  transition: var(--transition);
+  margin-bottom: 20px;
+}
+
+.btn-cta-mega:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 0 0 1px rgba(0, 207, 255, 0.6),
+    0 12px 60px rgba(0, 207, 255, 0.6),
+    0 30px 100px rgba(0, 100, 255, 0.3);
+}
+
+.btn-cta-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 48px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: #060a10;
+  letter-spacing: 0.04em;
+  position: relative;
+  z-index: 1;
+}
+
+/* Shine sweep animation */
+.btn-cta-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transform: skewX(-20deg);
+  animation: shine 2.5s ease-in-out infinite;
+}
+
+/* ---- Store Link Hint ---- */
+.cta-link-hint {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .cta-perks      { gap: 10px; }
+
+  .btn-cta-inner {
+    padding: 18px 28px;
+    font-size: 0.92rem;
+  }
+}
